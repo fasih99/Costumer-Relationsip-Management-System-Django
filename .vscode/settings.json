@@ -1,0 +1,4 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "/opt/anaconda3/envs/CRM/bin/python"
+}

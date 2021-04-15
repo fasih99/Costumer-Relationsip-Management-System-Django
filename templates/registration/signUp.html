@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{% load tailwind_filters %}
+{% block content %}
+
+<section class="text-gray-600 body-font overflow-hidden">
+          <div class="flex border-t border-gray-200 py-2">
+            <div class="max-w-xl px-5 py-24 mx-auto">
+              <div class="pl-20 ml-20 mx-auto text-purple-500  text-3xl">Sign Up</div>
+              <form method='POST' >
+                  {% csrf_token %}
+                  {{ form|crispy }}   
+                  <button type="submit" class="ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Submit</button>  </form>
+          </div>
+          
+          </div>
+          
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<div class="flex border-t border-b mb-6 border-gray-200 py-2">
+    
+</div>
+
+{%endblock%}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load tailwind_filters %}
+
+{% block content %}
+<a href="{% url 'leads:leads_detail' leads.pk %}">Go back</a>
+<hr/>
+<h1>Update Lead for {{leads.f_name}} {{leads.l_name}}</h1>
+<div class="max-w-xl px-5 py-24 mx-auto">
+    <form method='POST' >
+        {% csrf_token %}
+        {{ form|crispy }}   
+        <button type="submit" class="ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Submit</button>  </form>
+</div>
+{% endblock %}
