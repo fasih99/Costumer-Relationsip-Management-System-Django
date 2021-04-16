@@ -106,7 +106,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': env('DB_NAME'),
         'USER': env('DB_USER'),
-        'HOST': env("DB_HOST"),
+        'HOST': 'ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/',
         'PORT': env("DB_PORT"),
     }
 }
